@@ -1,0 +1,20 @@
+{% extends 'authenticate/base.html' %}
+
+{% block content %}
+
+    <br>
+
+    <h2 class="text-center">Delete Profile</h2>
+    <hr class="col-md-6">
+
+    <div class="col-md-6 offset-md-3">
+        <form method="post">
+            {% csrf_token %}
+            <p>Are you sure, you want to delete your account? It is permament.</p>
+
+            <input type="submit" value="Delete" class="btn btn-danger">
+        </form>
+
+    </div>
+
+{% endblock %}
