@@ -1,5 +1,7 @@
 {% extends 'authenticate/base.html' %}
 
+{% block title %}Home | {{ block.super }}{% endblock title %}
+
 {% block content %}
 
     {% if user.is_authenticated %}
